@@ -19,6 +19,20 @@
 
 LOCAL_PATH := device/motorola/condor
 
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-5.x-uber/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 5.x-uber
+
+# Uber Optimizations
+CLANG_O3 := false
+STRICT_ALIASING := false
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := false
+
 # Kernel
 TARGET_KERNEL_CONFIG := cm_condor_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
