@@ -6,3 +6,5 @@ $(call inherit-product, vendor/cardinal/config/common.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := cardinal_condor
 PRODUCT_RELEASE_NAME := MOTO E
+
+PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="INSPIRE-REX"
